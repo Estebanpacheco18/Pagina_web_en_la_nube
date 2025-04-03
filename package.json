@@ -1,0 +1,21 @@
+{
+  "name": "pagina_web_en_la_nube",
+  "version": "1.0.0",
+  "description": "Esta aplicacion la subiremos al render.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Estebanpacheco18/Pagina_web_en_la_nube.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Estebanpacheco18/Pagina_web_en_la_nube/issues"
+  },
+  "homepage": "https://github.com/Estebanpacheco18/Pagina_web_en_la_nube#readme"
+}
