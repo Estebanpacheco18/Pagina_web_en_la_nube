@@ -20,9 +20,6 @@ WORKDIR /var/www/html
 # Copiar los archivos del proyecto
 COPY . .
 
-# Establecer permisos para el almacenamiento y caché
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
-
 # Exponer el puerto 8000
 EXPOSE 8000
 
