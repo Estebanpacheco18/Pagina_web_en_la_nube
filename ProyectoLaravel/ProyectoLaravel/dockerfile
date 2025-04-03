@@ -20,6 +20,9 @@ WORKDIR /var/www/html
 # Copiar los archivos del proyecto
 COPY . .
 
+# Crear las carpetas necesarias si no existen
+RUN mkdir -p /var/www/html/storage /var/www/html/bootstrap/cache
+
 # Establecer permisos para las carpetas de almacenamiento y caché
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
