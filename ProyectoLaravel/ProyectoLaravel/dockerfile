@@ -18,7 +18,7 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 WORKDIR /var/www/html
 
 # Copiar los archivos del proyecto
-COPY . .
+COPY ./ProyectoLaravel /var/www/html
 
 # Crear las carpetas necesarias si no existen
 RUN mkdir -p /var/www/html/storage /var/www/html/bootstrap/cache
@@ -26,6 +26,10 @@ RUN mkdir -p /var/www/html/storage /var/www/html/bootstrap/cache
 # Establecer permisos para las carpetas de almacenamiento y caché
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
+# Verificar los archivos copiados (opcional para depuración)
+RUN ls -la /var/www/html
+
+# Hacer ejecutable el archivo artisan
 RUN chmod +x /var/www/html/artisan
 
 # Exponer el puerto 8000
