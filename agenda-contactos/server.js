@@ -10,6 +10,11 @@ const Contact = require('./models/Contact');
 
 const app = express();
 
+// Ruta para la raíz
+app.get('/', (req, res) => {
+    res.send('Bienvenido a la API de Agenda de Contactos');
+  });
+  
 // Middlewares
 app.use(cors());
 app.use(bodyParser.json());
