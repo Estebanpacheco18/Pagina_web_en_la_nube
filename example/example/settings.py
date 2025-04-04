@@ -25,8 +25,9 @@ SECRET_KEY = 'django-insecure-4)nko132yi0wb57k0ahz%q^si$gxb24^8$5x_4am7p0s-p*q1c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['nube.onrender.com', '127.0.0.1', 'localhost']
-
+# Importante colocar el nombre de la aplicacion en Render
+# o el nombre del dominio si es un dominio propio
+ALLOWED_HOSTS = ['pagina-web-en-la-nube-2.onrender.com', '127.0.0.1', 'localhost']
 
 # Application definition
 
